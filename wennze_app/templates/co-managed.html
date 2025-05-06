@@ -1,0 +1,185 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Co-Managed IT Services | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg2.jpeg' %}');">
+        <div class="container">
+            <h1>Co-Managed IT Services</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+     <section class="intro">
+        <div class="container">
+            <h2>What is Co-Managed IT?</h2>
+            <p>Co-Managed IT Services allow organizations with existing IT staff to supplement their team with our expertise, tools, and resources. This collaborative approach provides the perfect balance of in-house control and external support.</p>
+            <p>Whether you need help with specific projects, after-hours support, or specialized expertise, our co-managed services can fill the gaps in your IT operations.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Co-Managed IT Services</h2>
+                <p>We offer flexible solutions that can be tailored to your specific needs and complement your existing IT team.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Help Desk Support</h3>
+                    <p>Provide your employees with 24/7 help desk support to complement your internal team's availability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Services</h3>
+                    <p>Enhance your security posture with our advanced cybersecurity tools and expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Management</h3>
+                    <p>Get expert assistance with cloud migration, management, and optimization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infrastructure Management</h3>
+                    <p>Offload the monitoring and maintenance of your network infrastructure to our team.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Project Support</h3>
+                    <p>Get additional resources for special projects or initiatives that exceed your team's capacity.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Strategic Planning</h3>
+                    <p>Leverage our expertise for IT roadmap development and technology planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Co-Managed IT</h2>
+                <p>Discover how our co-managed IT services can transform your technology operations.</p>
+            </div>
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/co-managed-it-benefits.jpg" alt="Team collaboration">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Cost Efficiency</h3>
+                            <p>Reduce the need to hire additional full-time staff while gaining access to a full team of experts.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Increased Productivity</h3>
+                            <p>Free up your internal team to focus on strategic initiatives by offloading routine tasks.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Access to Expertise</h3>
+                            <p>Gain specialized skills and knowledge that may not exist within your current team.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>24/7 Coverage</h3>
+                            <p>Ensure round-the-clock monitoring and support without overburdening your staff.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Scalability</h3>
+                            <p>Easily scale your IT support up or down based on changing business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Our Co-Managed IT Works</h2>
+                <p>A simple, collaborative process that integrates seamlessly with your existing team.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Assessment</h3>
+                    <p>We evaluate your current IT environment, team structure, and pain points to identify areas where we can add the most value.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Plan</h3>
+                    <p>We develop a tailored co-managed IT plan that addresses your specific needs and complements your internal capabilities.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Integration</h3>
+                    <p>Our team integrates with yours, establishing clear roles, responsibilities, and communication protocols.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Support</h3>
+                    <p>We provide continuous support, regular reviews, and adjust our services as your needs evolve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Enhance Your IT Team?</h2>
+            <p>Discover how our co-managed IT services can help your organization achieve more with your existing resources.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Request a Consultation</a>
+                <a href="tel:+18001234567" class="btn btn-outline">Call Us Now</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

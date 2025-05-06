@@ -1,0 +1,191 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Endpoint Detection & Response (EDR) | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg16.jpeg' %}');">
+        <div class="container">
+            <h1>Endpoint Detection & Response (EDR)</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Advanced Threat Protection for Every Endpoint</h2>
+        <p>Our Endpoint Detection and Response (EDR) services provide real-time monitoring, threat detection, and automated response capabilities to protect your devices from sophisticated cyberattacks.</p>
+        <p>Using AI-driven behavioral analysis and continuous endpoint visibility, we stop threats before they impact your business—whether on workstations, servers, or mobile devices.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our EDR Security Capabilities</h2>
+            <p>Comprehensive protection against modern cyber threats</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Real-Time Monitoring</h3>
+                <p>Continuous tracking of endpoint activities to detect malicious behavior instantly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI-Powered Detection</h3>
+                <p>Machine learning identifies zero-day threats and advanced persistent threats (APTs).</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3>Automated Response</h3>
+                <p>Instant containment of threats through isolation, process termination, and remediation.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Threat Hunting</h3>
+                <p>Proactive search for hidden threats across all endpoints with forensic analysis.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h3>Incident Timeline</h3>
+                <p>Detailed attack reconstruction for faster investigation and threat intelligence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud & On-Prem Support</h3>
+                <p>Protection for all endpoints—Windows, macOS, Linux, and cloud workloads.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose Our EDR Solution?</h2>
+            <p>Stay ahead of cybercriminals with enterprise-grade endpoint security</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/edr-security.jpg" alt="EDR Threat Detection">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Faster Threat Response</h3>
+                        <p>Reduce dwell time with automated detection and response in seconds.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Ransomware Protection</h3>
+                        <p>Block file encryption attacks before they spread across your network.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Deep Visibility</h3>
+                        <p>Gain insights into every process, file, and network connection.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>MITRE ATT&CK Coverage</h3>
+                        <p>Defend against known adversary tactics, techniques, and procedures.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>24/7 SOC Support</h3>
+                        <p>Backed by our Security Operations Center for expert threat analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our EDR Protection Process</h2>
+            <p>From detection to automated remediation</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Endpoint Visibility</h3>
+                <p>Lightweight agent collects process, file, and network activity data.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Behavioral Analysis</h3>
+                <p>AI detects anomalies and malicious patterns in real time.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Threat Validation</h3>
+                <p>Security analysts verify high-risk detections to eliminate false positives.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Automated Action</h3>
+                <p>Isolate endpoints, kill malicious processes, and roll back changes.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Forensic Reporting</h3>
+                <p>Detailed incident reports with root cause analysis and hardening recommendations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Ready to Secure Your Endpoints?</h2>
+        <p>Protect your business from advanced threats with our next-generation EDR solution.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn">Request EDR Demo</a>
+            <a href="tel:+18001234567" class="btn btn-outline">Speak to a Security Expert</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

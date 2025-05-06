@@ -1,0 +1,191 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Professional Network Administration Services | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg3.jpeg' %}');">
+        <div class="container">
+            <h1>Network Administration Services</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Expert Network Management Solutions</h2>
+        <p>Our professional network administration services ensure your business infrastructure operates at peak performance with maximum security and reliability. We handle the complexities of your network so you can focus on your core business.</p>
+        <p>From daily maintenance to strategic network planning, our certified network engineers provide the expertise your organization needs to thrive in today's connected world.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Network Administration Services</h2>
+            <p>Comprehensive network solutions tailored to your organizational needs</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Network Monitoring</h3>
+                <p>24/7 monitoring of your network infrastructure with immediate alerting for any performance issues or outages.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Management</h3>
+                <p>Comprehensive firewall configuration, intrusion detection, and vulnerability management to protect your network.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Server Administration</h3>
+                <p>Expert management of Windows, Linux, and virtual servers including updates, patches, and performance tuning.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>Wireless Network Management</h3>
+                <p>Design, implementation, and optimization of secure, high-performance wireless networks.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Network Integration</h3>
+                <p>Seamless integration between on-premise networks and cloud services (AWS, Azure, Google Cloud).</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3>Network Automation</h3>
+                <p>Implementation of automation tools to streamline network operations and reduce human error.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Professional Network Administration</h2>
+            <p>Why businesses trust us with their critical network infrastructure</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/network-administration.jpg" alt="Network Operations Center">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-uptime"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>99.99% Uptime</h3>
+                        <p>Proactive maintenance and monitoring ensures maximum network availability for your business.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Enhanced Security</h3>
+                        <p>Enterprise-grade security measures protect against evolving cyber threats.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Optimized Performance</h3>
+                        <p>Continuous tuning and optimization keeps your network running at peak efficiency.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Scalable Solutions</h3>
+                        <p>Network architecture designed to grow with your business needs.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Expert Support</h3>
+                        <p>Access to certified network engineers whenever you need assistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Network Administration Process</h2>
+            <p>A structured approach to managing your network infrastructure</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Network Assessment</h3>
+                <p>Comprehensive evaluation of your current network infrastructure, identifying strengths and areas for improvement.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Strategic Planning</h3>
+                <p>Development of a customized network management plan aligned with your business objectives.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Implementation</h3>
+                <p>Deployment of monitoring tools, security measures, and optimization configurations.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Ongoing Management</h3>
+                <p>24/7 monitoring, regular maintenance, and performance tuning.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Continuous Improvement</h3>
+                <p>Regular reviews and upgrades to keep pace with technology advancements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Ready to Optimize Your Network Infrastructure?</h2>
+        <p>Partner with our network administration experts to build a faster, more secure, and reliable network for your business.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn">Request Network Assessment</a>
+            <a href="tel:+18001234567" class="btn btn-outline">Speak to a Network Engineer</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

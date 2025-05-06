@@ -1,0 +1,150 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Azure Cloud Solutions | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg17.jpeg' %}');">
+    <div class="container">
+        <h1>Azure Cloud Solutions</h1>
+        <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+        <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Scalable, Secure, and Intelligent Cloud Solutions</h2>
+        <p>BetterWorld Technology empowers your business with Microsoft Azure Cloud Solutions—offering flexibility, performance, and advanced capabilities to support your digital transformation. Whether you're migrating to the cloud or optimizing your existing environment, we ensure your cloud journey is seamless and cost-effective.</p>
+        <p>Unlock innovation, reduce infrastructure overhead, and stay competitive with enterprise-grade Azure solutions.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>What Azure Can Do for You</h2>
+            <p>Robust cloud services tailored to your business needs</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h3>Cloud Migration</h3>
+                <p>We guide your transition from on-premise systems to a fully cloud-based infrastructure with minimal downtime.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-database"></i></div>
+                <h3>Data Backup & Disaster Recovery</h3>
+                <p>Keep your data safe and recoverable with automated, scalable Azure backup and recovery options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Infrastructure as a Service (IaaS)</h3>
+                <p>Run servers, networking, and virtual machines in the cloud without managing hardware.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Azure Virtual Desktop</h3>
+                <p>Enable remote work with secure, virtualized desktops and apps hosted on Azure.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Security & Compliance</h3>
+                <p>Protect your business with built-in security tools and stay compliant with industry regulations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Azure with BetterWorld</h2>
+            <p>Enhance your agility, reliability, and security with expert cloud support</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="{% static 'images/bg21.jpeg' %}" alt="Azure Cloud Solutions">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-sync-alt"></i></div>
+                    <div class="benefit-text">
+                        <h3>Seamless Integration</h3>
+                        <p>Azure works smoothly with your existing Microsoft 365 environment and business tools.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="benefit-text">
+                        <h3>Scalability on Demand</h3>
+                        <p>Scale resources up or down as your needs change—no more over-provisioning.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-clock"></i></div>
+                    <div class="benefit-text">
+                        <h3>99.9% Uptime</h3>
+                        <p>Leverage Microsoft’s global infrastructure with high availability and performance.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="benefit-text">
+                        <h3>Expert Guidance</h3>
+                        <p>Our certified professionals help you plan, deploy, and manage Azure efficiently.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Azure Deployment Process</h2>
+            <p>Strategic planning and execution tailored to your cloud goals</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Assessment</h3>
+                <p>We analyze your infrastructure to identify the best cloud migration or adoption strategy.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Architecture Design</h3>
+                <p>Our team designs a secure, scalable Azure solution that fits your workload and goals.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Migration & Setup</h3>
+                <p>We move your applications, databases, and files to Azure with minimal disruption.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Optimization & Support</h3>
+                <p>We monitor performance, manage costs, and provide continuous support and updates.</p>
+            </div>
+        </div>
+    </div>
+</section><br><br>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Start Your Cloud Journey Today</h2>
+        <p>Partner with BetterWorld Technology to build a future-ready, secure, and efficient cloud environment on Microsoft Azure.</p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn btn-outline">Contact us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

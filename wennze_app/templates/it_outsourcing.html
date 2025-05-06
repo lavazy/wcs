@@ -1,0 +1,184 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Onshore IT Outsourcing | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg32.jpeg' %}');">
+        <div class="container">
+            <h1>Onshore IT Outsourcing Solutions</h1>
+            <p>Reliable, local IT expertise that scales with your business — all without the communication barriers or time zone challenges.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Partner With Us</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>Why Onshore IT Outsourcing?</h2>
+            <p>Onshore IT outsourcing offers your organization the benefits of external technical expertise while keeping operations aligned with your local culture, time zone, and regulations.</p>
+            <p>We deliver high-quality services from within the United States, ensuring quick response times, better collaboration, and clear communication.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Onshore Services</h2>
+                <p>We offer comprehensive onshore IT services to support your day-to-day operations and long-term innovation goals.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Help Desk & End-User Support</h3>
+                    <p>U.S.-based technical support for your staff with fast issue resolution and 24/7 availability.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Management</h3>
+                    <p>Secure, efficient monitoring and management of your infrastructure by certified local experts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Custom software and app development from local teams who understand your market.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Migrate, manage, and optimize your cloud infrastructure with local DevOps and cloud engineers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business with proactive onshore threat monitoring, assessments, and compliance services.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Management</h3>
+                    <p>Secure and organize your business-critical data with scalable onshore data services and analytics support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Onshore Advantage</h2>
+                <p>Discover how partnering with a local team can drive performance, compliance, and collaboration.</p>
+            </div>
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="{% static 'images/bg33.jpeg' %}" alt="Onshore outsourcing benefits">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Local Collaboration</h3>
+                            <p>Work with professionals who understand your culture, language, and expectations.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Real-Time Support</h3>
+                            <p>Eliminate delays with synchronized time zones and fast incident response.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Regulatory Compliance</h3>
+                            <p>Meet federal, state, and industry-specific compliance requirements with U.S.-based handling of your data and systems.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Stronger Data Security</h3>
+                            <p>Keep sensitive information safe with locally governed cybersecurity practices.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Better Client Relationships</h3>
+                            <p>Build long-term partnerships with local experts who act as an extension of your team.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Approach to Onshore Outsourcing</h2>
+                <p>We make IT outsourcing seamless, secure, and tailored to your business goals.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Needs Analysis</h3>
+                    <p>We assess your internal capacity and determine where onshore support can add the most value.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Team Matching</h3>
+                    <p>We assign U.S.-based professionals with the right skills and experience to your project.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Onboarding & Integration</h3>
+                    <p>We ensure seamless collaboration with your in-house team and begin delivering immediate value.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Performance Management</h3>
+                    <p>We monitor delivery metrics, provide ongoing support, and continuously align with your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Looking for a Trusted Onshore Partner?</h2>
+            <p>BetterWorld Technology delivers local IT support that feels in-house — with the flexibility of outsourcing.</p>
+            <div class="cta-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-outline">Call Our Team</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

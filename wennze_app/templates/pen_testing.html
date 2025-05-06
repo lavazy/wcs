@@ -1,0 +1,230 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Penetration Testing Services | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg4.jpeg' %}');">
+        <div class="container">
+            <h1>Penetration Testing Services</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Uncover Vulnerabilities Before Attackers Do</h2>
+        <p>Our comprehensive penetration testing services simulate real-world cyber attacks to identify security weaknesses in your systems, networks, and applications. We go beyond automated scans with expert-led testing that reveals how attackers could compromise your organization.</p>
+        <p>Using ethical hacking techniques aligned with industry standards (OWASP, NIST, PTES), we provide actionable insights to strengthen your security posture.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Penetration Testing Solutions</h2>
+            <p>Tailored security assessments for your specific needs</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Network Penetration Testing</h3>
+                <p>Identify vulnerabilities in network infrastructure, firewalls, and connected devices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Application Testing</h3>
+                <p>Comprehensive assessment of web apps for OWASP Top 10 vulnerabilities and business logic flaws.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Application Testing</h3>
+                <p>Security evaluation of iOS and Android apps, including reverse engineering and API testing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Security Assessment</h3>
+                <p>Configuration review and penetration testing for AWS, Azure, and GCP environments.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>Social Engineering</h3>
+                <p>Simulated phishing, vishing, and physical security tests to evaluate human vulnerabilities.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h3>Red Team Exercises</h3>
+                <p>Advanced adversarial simulations that test detection and response capabilities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Professional Penetration Testing</h2>
+            <p>Proactive security validation for your organization</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/penetration-testing.jpg" alt="Penetration Testing Process">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Identify Real Risks</h3>
+                        <p>Discover exploitable vulnerabilities that automated scanners often miss.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Prevent Data Breaches</h3>
+                        <p>Find and fix security gaps before attackers can exploit them.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Meet Compliance</h3>
+                        <p>Satisfy PCI DSS, HIPAA, SOC 2, ISO 27001 and other regulatory requirements.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Prioritize Remediation</h3>
+                        <p>Get risk-rated findings with clear remediation guidance.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Executive Reporting</h3>
+                        <p>Receive both technical details and business-risk focused reports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Methodology Section -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Penetration Testing Methodology</h2>
+            <p>Comprehensive testing following industry best practices</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Planning & Scoping</h3>
+                <p>Define test objectives, rules of engagement, and systems in scope.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Reconnaissance</h3>
+                <p>Gather intelligence about your systems and identify potential attack vectors.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Vulnerability Analysis</h3>
+                <p>Systematically identify and validate security weaknesses.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Exploitation</h3>
+                <p>Safely attempt to exploit vulnerabilities to demonstrate business impact.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Reporting & Remediation</h3>
+                <p>Deliver detailed findings with prioritized recommendations and verification testing.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Ready to Test Your Security Defenses?</h2>
+        <p>Discover your vulnerabilities before attackers do - schedule a penetration test today.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn">Request a Pen Test</a>
+            <a href="tel:+18001234567" class="btn btn-outline">Speak to a Security Consultant</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Penetration Testing FAQs</h2>
+            <p>Answers to common questions about our services</p>
+        </div>
+        <div class="faq-items">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>How often should we conduct penetration testing?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We recommend annual penetration testing at minimum, with more frequent testing (quarterly or biannually) for organizations handling sensitive data or undergoing significant system changes. Compliance requirements like PCI DSS mandate testing at least annually and after major changes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What's the difference between vulnerability scanning and pen testing?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>Vulnerability scanning uses automated tools to identify known vulnerabilities, while penetration testing involves manual exploitation attempts by security experts to validate risks and demonstrate potential business impact. Pen testing provides deeper insight into how vulnerabilities could be chained together to compromise systems.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Will testing disrupt our operations?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <p>We follow strict rules of engagement to minimize disruption. Most tests are conducted non-disruptively, with any potentially invasive testing scheduled during maintenance windows. Our team coordinates closely with your IT staff throughout the engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

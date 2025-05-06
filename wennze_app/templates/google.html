@@ -1,0 +1,151 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Google Cloud Solutions | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg22.jpeg' %}');">
+        <div class="container">
+            <h1>Google Cloud Solutions</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Innovative, Scalable, and Intelligent Cloud Solutions</h2>
+        <p>BetterWorld Technology helps your business harness the full potential of Google Cloud—delivering advanced infrastructure, data analytics, and AI capabilities to drive growth and innovation. Whether you're modernizing applications or migrating workloads, we make your cloud journey efficient and future-ready.</p>
+        <p>Leverage Google's powerful global network and cutting-edge services to build secure, agile, and intelligent digital solutions.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>What Google Cloud Can Do for You</h2>
+            <p>Modern cloud services to meet the demands of a digital-first world</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <h3>Cloud Migration</h3>
+                <p>Move your infrastructure, apps, and data to Google Cloud with a tailored migration strategy and minimal disruption.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                <h3>AI & Machine Learning</h3>
+                <p>Use pre-trained models and custom AI tools to enhance decision-making, automate tasks, and unlock insights.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                <h3>Big Data & Analytics</h3>
+                <p>Analyze massive data sets in real time using Google BigQuery and other intelligent analytics services.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-code"></i></div>
+                <h3>App Modernization</h3>
+                <p>Develop and deploy scalable, containerized applications with Kubernetes, Anthos, and serverless tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Security & Identity</h3>
+                <p>Protect your users, data, and workloads with Google’s zero-trust security model and built-in compliance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Google Cloud with BetterWorld</h2>
+            <p>Build smarter, move faster, and innovate confidently with expert cloud guidance</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="{% static 'images/bg23.jpeg' %}" alt="Google Cloud Solutions">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-brain"></i></div>
+                    <div class="benefit-text">
+                        <h3>Intelligent Tools</h3>
+                        <p>Access advanced analytics, AI, and ML tools that help your business thrive in a data-driven world.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="benefit-text">
+                        <h3>Speed & Performance</h3>
+                        <p>Deploy services on Google's fast, global infrastructure for maximum uptime and low latency.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+                    <div class="benefit-text">
+                        <h3>Built-in Security</h3>
+                        <p>Secure by design, with encryption by default and advanced identity management options.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="benefit-text">
+                        <h3>Partner Expertise</h3>
+                        <p>Our certified team ensures your Google Cloud strategy is executed smoothly, efficiently, and with ROI in mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Google Cloud Adoption Process</h2>
+            <p>Strategic guidance every step of the way—secure, smart, and streamlined</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Discovery & Planning</h3>
+                <p>We assess your current environment and identify workloads suitable for Google Cloud.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Architecture Design</h3>
+                <p>We develop a scalable, secure architecture tailored to your business goals and compliance needs.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Migration & Deployment</h3>
+                <p>Applications and data are moved with best practices, ensuring minimal downtime and maximum performance.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Optimization & Support</h3>
+                <p>We continue to monitor, optimize, and support your cloud operations for ongoing efficiency and growth.</p>
+            </div>
+        </div>
+    </div>
+</section><br><br>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Accelerate with Google Cloud</h2>
+        <p>Transform your business with scalable, intelligent, and secure Google Cloud solutions powered by BetterWorld Technology.</p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn btn-outline">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

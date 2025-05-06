@@ -1,0 +1,114 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Virtual Desktop Solutions | Wennze Cloud Service
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg26.jpeg' %}');">
+        <div class="container">
+            <h1>Virtual Desktop Solutions</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Empower a Secure and Flexible Remote Workforce</h2>
+        <p>BetterWorld Technology delivers Virtual Desktop Infrastructure (VDI) solutions that enable secure, anytime-anywhere access to desktops and applications. Whether your team is fully remote, hybrid, or in-office, our cloud-based virtual desktops provide a seamless, secure, and scalable user experience.</p>
+        <p>Boost productivity, improve security, and simplify IT management with our modern virtual desktop solutions.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>What Virtual Desktops Can Do for You</h2>
+            <p>Deliver consistent performance and security across all work environments</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-desktop"></i></div>
+                <h3>Anywhere Access</h3>
+                <p>Allow users to securely access their desktop and apps from any device, anywhere in the world.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+                <h3>Centralized Security</h3>
+                <p>Keep data off local devices and in the cloud to protect against breaches and device loss.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
+                <h3>Easy Management</h3>
+                <p>Simplify patching, updates, and configuration from a single, centralized platform.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                <h3>Scalable Deployment</h3>
+                <p>Quickly provision or scale desktops up or down to meet workforce demands and seasonal needs.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Virtual Desktop Infrastructure</h2>
+            <p>Modernize your workplace with flexible, cloud-first computing</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="{% static 'images/bg27.jpeg' %}" alt="Virtual Desktop Solutions">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+                    <div class="benefit-text">
+                        <h3>Enhanced Security</h3>
+                        <p>Keep sensitive data within your virtual environment with zero data stored on endpoint devices.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-laptop-house"></i></div>
+                    <div class="benefit-text">
+                        <h3>Remote Work Enablement</h3>
+                        <p>Support a distributed workforce with high-performance desktops and apps delivered from the cloud.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-cogs"></i></div>
+                    <div class="benefit-text">
+                        <h3>Simplified IT</h3>
+                        <p>Reduce complexity and maintenance with centralized control and automation.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="benefit-text">
+                        <h3>Cost Efficiency</h3>
+                        <p>Lower hardware and operational costs with flexible, usage-based pricing models.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Enable Your Remote Workforce Today</h2>
+        <p>Let BetterWorld Technology help you deploy secure, scalable virtual desktop solutions tailored to your business needs.</p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn btn-outline">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

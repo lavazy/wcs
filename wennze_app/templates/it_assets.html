@@ -1,0 +1,191 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    IT Asset Management & Disposal | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+<!-- Intro Section -->
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg11.jpeg' %}');">
+        <div class="container">
+            <h1>IT Asset Management & Disposal</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+     <section class="intro">
+        <div class="container">
+            <h2>Comprehensive IT Asset Lifecycle Management</h2>
+            <p>Our IT Asset Management and Disposal services provide organizations with complete control over their technology assets from procurement through retirement. We help you maximize value, ensure compliance, and maintain security throughout the entire asset lifecycle.</p>
+            <p>Whether you need to track assets, optimize utilization, or securely dispose of retired equipment, our certified processes protect your data and your bottom line.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our IT Asset Management Services</h2>
+                <p>End-to-end solutions for managing your technology assets with precision and care.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-barcode"></i>
+                    </div>
+                    <h3>Asset Inventory & Tracking</h3>
+                    <p>Comprehensive tracking system with detailed reporting on all IT assets including hardware, software, and licenses.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure Data Destruction</h3>
+                    <p>NAID-certified data sanitization processes to ensure complete data erasure before disposal or redeployment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Eco-Friendly Disposal</h3>
+                    <p>R2 certified electronics recycling that meets all environmental regulations and sustainability goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Asset Redeployment</h3>
+                    <p>Optimize your IT budget by identifying opportunities to repurpose existing equipment within your organization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>License Compliance</h3>
+                    <p>Software license management to ensure compliance and avoid costly penalties from software audits.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Lifecycle Analytics</h3>
+                    <p>Data-driven insights to help you make informed decisions about technology refresh cycles and budgeting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Professional IT Asset Management</h2>
+                <p>Transform your IT asset lifecycle into a strategic advantage for your organization.</p>
+            </div>
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/it-asset-management.jpg" alt="IT Asset Management">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Risk Mitigation</h3>
+                            <p>Eliminate data breach risks with certified data destruction processes and chain-of-custody documentation.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Cost Recovery</h3>
+                            <p>Generate revenue from retired assets through our remarketing services and resale programs.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Regulatory Compliance</h3>
+                            <p>Meet all HIPAA, GDPR, FACTA, and other regulatory requirements for data security and asset disposal.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Sustainability</h3>
+                            <p>Ensure environmentally responsible disposal with detailed recycling reports and certificates.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Complete Visibility</h3>
+                            <p>Real-time asset tracking and reporting gives you full visibility into your technology investments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our IT Asset Disposal Process</h2>
+                <p>A secure, documented process that protects your data and meets all compliance requirements.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Inventory & Assessment</h3>
+                    <p>We conduct a complete inventory of assets scheduled for disposal and assess their condition and value.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Data Sanitization</h3>
+                    <p>All data-bearing devices undergo certified data destruction using DoD-standard methods.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Secure Logistics</h3>
+                    <p>GPS-tracked transport with chain-of-custody documentation from pickup to final disposition.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Environmentally Responsible Recycling</h3>
+                    <p>Devices are processed at our R2 certified facility with 0% landfill policy.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Detailed Reporting</h3>
+                    <p>You receive comprehensive certificates of data destruction and recycling for compliance records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Optimize Your IT Asset Management?</h2>
+            <p>Discover how our comprehensive asset management and secure disposal services can protect your data and maximize the value of your technology investments.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Request a Free Audit</a>
+                <a href="tel:+18001234567" class="btn btn-outline">Call Our Asset Team</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

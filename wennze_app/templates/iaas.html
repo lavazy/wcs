@@ -1,0 +1,69 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Infrastructure as a Service (IaaS) | Wennze Cloud Service
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg24.jpeg' %}');">
+        <div class="container">
+            <h1>Infrastructure as a Service (IaaS)</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Flexible, Scalable Cloud Infrastructure</h2>
+        <p>BetterWorld Technology delivers Infrastructure as a Service (IaaS) to help businesses scale IT resources on-demand without the cost and complexity of physical infrastructure. Build, test, and deploy applications quickly using secure, cloud-based servers, networking, and storage.</p>
+        <p>Empower your IT team with full control over your environment—while reducing overhead and accelerating innovation.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>What IaaS Offers Your Business</h2>
+            <p>On-demand compute, storage, and networking resources in the cloud</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-server"></i></div>
+                <h3>Virtual Servers</h3>
+                <p>Provision and scale virtual machines for your applications without hardware investment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-hdd"></i></div>
+                <h3>Cloud Storage</h3>
+                <p>Store and access your data securely in the cloud with high availability and redundancy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Networking</h3>
+                <p>Configure cloud networks, firewalls, and load balancers for secure connectivity and performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                <h3>Custom Environments</h3>
+                <p>Design flexible infrastructure tailored to your development, testing, or production workloads.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Build Smarter with IaaS</h2>
+        <p>Partner with BetterWorld Technology for secure, scalable, and efficient infrastructure as a service solutions.</p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn btn-outline">Call Us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

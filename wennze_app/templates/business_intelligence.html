@@ -1,0 +1,183 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Business Intelligence Solutions | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg28.jpeg' %}');">
+    <div class="container">
+        <h1>Business Intelligence Solutions</h1>
+        <p>Unlock actionable insights and drive smarter decisions with our Business Intelligence expertise and tools.</p>
+        <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>What is Business Intelligence?</h2>
+        <p>Business Intelligence (BI) refers to the strategies and technologies used to analyze data and deliver insights that support business decision-making. Our BI solutions help you transform raw data into meaningful and useful information.</p>
+        <p>Whether you're aiming to optimize performance, understand customer behavior, or forecast trends, we equip you with tools that provide a competitive edge.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Business Intelligence Services</h2>
+            <p>Tailored solutions that turn your data into a strategic asset.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Warehousing</h3>
+                <p>Centralize and organize your data to support effective analysis and reporting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Interactive Dashboards</h3>
+                <p>Visualize your KPIs in real time with easy-to-use dashboards and reports.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Predictive Analytics</h3>
+                <p>Leverage machine learning to anticipate trends and make data-driven decisions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users-cog"></i>
+                </div>
+                <h3>Self-Service BI</h3>
+                <p>Empower your team to run reports and gain insights without needing technical support.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Data Integration</h3>
+                <p>Consolidate data from multiple sources into a unified view for seamless analysis.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Data Governance</h3>
+                <p>Ensure accuracy, consistency, and security across your business data landscape.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Business Intelligence</h2>
+            <p>Experience how BI can elevate your business strategy and operations.</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="{% static 'images/bg29.jpeg' %}" alt="Data-driven teamwork">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Smarter Decisions</h3>
+                        <p>Use real-time data to guide business strategies and reduce guesswork.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Operational Efficiency</h3>
+                        <p>Identify bottlenecks and areas for improvement across departments.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Improved Customer Insight</h3>
+                        <p>Understand customer behavior and preferences to better serve them.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Risk Management</h3>
+                        <p>Monitor key metrics and detect anomalies before they become issues.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Scalability</h3>
+                        <p>Expand your BI capabilities as your organization grows and evolves.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-title">
+            <h2>How Our BI Solutions Work</h2>
+            <p>We guide you through every stage to ensure measurable impact and seamless integration.</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Discovery</h3>
+                <p>We assess your data sources, reporting needs, and business goals.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Solution Design</h3>
+                <p>We develop a BI framework tailored to your unique requirements and KPIs.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Implementation</h3>
+                <p>We integrate data sources and set up dashboards, tools, and analytics engines.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Ongoing Optimization</h3>
+                <p>We provide training, updates, and ongoing analysis to refine your BI approach.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Ready to Turn Your Data into Insight?</h2>
+        <p>Partner with us to create a business intelligence strategy that drives performance and growth.</p>
+        <div class="cta-buttons">
+            <a href="{% url 'contact' %}" class="btn btn-outline">Contact Us</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}

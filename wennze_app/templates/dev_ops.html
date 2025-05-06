@@ -1,0 +1,184 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    DevOps Solutions | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg30.jpeg' %}');">
+        <div class="container">
+            <h1>DevOps Solutions</h1>
+            <p>Accelerate your software development lifecycle with our reliable, scalable, and automated DevOps services.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <h2>What is DevOps?</h2>
+            <p>DevOps is a set of practices that integrates software development and IT operations to shorten the development lifecycle and deliver high-quality software continuously.</p>
+            <p>Our DevOps solutions empower your teams to collaborate better, automate processes, and achieve faster, more reliable software releases.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our DevOps Services</h2>
+                <p>Transform your development operations with our comprehensive suite of DevOps tools and practices.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>CI/CD Pipelines</h3>
+                    <p>Implement robust Continuous Integration and Continuous Deployment pipelines for faster and safer code delivery.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Infrastructure as Code</h3>
+                    <p>Automate infrastructure provisioning and management using tools like Terraform, Ansible, and CloudFormation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Monitoring & Logging</h3>
+                    <p>Gain real-time insights into system performance and availability with integrated monitoring and logging tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security Integration</h3>
+                    <p>Incorporate security at every stage of development with DevSecOps practices and tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Version Control</h3>
+                    <p>Leverage Git and other SCM tools for streamlined collaboration, branching, and rollback.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud DevOps</h3>
+                    <p>Deploy and manage applications in AWS, Azure, or Google Cloud with scalable and reliable DevOps practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of DevOps</h2>
+                <p>See how our DevOps solutions help you build faster, deploy smarter, and operate more efficiently.</p>
+            </div>
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="{% static 'images/bg31.jpeg' %}" alt="DevOps collaboration">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Faster Time to Market</h3>
+                            <p>Accelerate software releases with streamlined processes and automated workflows.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Improved Quality</h3>
+                            <p>Catch issues early with automated testing, monitoring, and integration.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Team Collaboration</h3>
+                            <p>Bridge the gap between development and operations teams for smoother deployments.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Automation & Consistency</h3>
+                            <p>Reduce manual errors and ensure consistent environments across development stages.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Operational Efficiency</h3>
+                            <p>Spend less time fixing problems and more time building value-driven solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Our DevOps Solutions Work</h2>
+                <p>We follow a collaborative, phased approach to ensure your DevOps transformation is smooth and successful.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Assessment</h3>
+                    <p>We analyze your current development and operations workflows to identify improvement areas.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Strategy</h3>
+                    <p>We design a customized DevOps roadmap tailored to your team, tools, and business goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Implementation</h3>
+                    <p>We integrate and automate your CI/CD pipelines, monitoring tools, and infrastructure provisioning.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Continuous Optimization</h3>
+                    <p>We provide ongoing monitoring, support, and optimization to ensure continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready to Embrace DevOps?</h2>
+            <p>Let BetterWorld Technology help you streamline your software development lifecycle and innovate faster.</p>
+            <div class="cta-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-outline">Call Us</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

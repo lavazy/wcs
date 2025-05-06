@@ -1,0 +1,434 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{% static 'images/wennze1.jpeg' %}" type="image/x-icon">
+  <title>Wennze Cloud Service</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    .top-bar {
+      background: #0d6efd;
+      padding: 8px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      animation: slideDown 1s ease forwards;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 40px;
+      background: white;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #0d6efd;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin-top: 10px;
+      z-index: 10;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li a {
+      padding: 10px 20px;
+      display: block;
+      color: #333;
+    }
+
+    .dropdown-menu li a:hover {
+      background: #f1f1f1;
+      color: #0d6efd;
+    }
+
+    .hero {
+      height: 90vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      font-weight: 400;
+    }
+
+    .features {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .features li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .btn-primary.contact-btn {
+      background: #0d6efd;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-primary.contact-btn:hover {
+      background: #0056b3;
+    }
+
+    .trusted {
+      margin-top: 15px;
+      font-size: 1rem;
+    }
+
+    .stars {
+      font-size: 2rem;
+      color: #ffc107;
+      margin-top: 10px;
+    }
+
+    .awards {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .awards-logos img {
+      max-width: 150px;
+      margin: 20px;
+      transition: transform 0.3s;
+    }
+
+    .awards-logos img:hover {
+      transform: scale(1.1);
+    }
+    
+    .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    }
+
+    .service-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    position: relative;
+    }
+
+    .service-card:hover {
+    transform: translateY(-10px);
+    }
+
+    .service-card h4 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    }
+
+    .service-card p {
+    margin-bottom: 1.5rem;
+    color: #555;
+    }
+
+    .btn-service {
+    display: inline-block;
+    padding: 10px 20px;
+    background:  #ffc107;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    }
+
+    .btn-service:hover {
+    background: #ffffff;
+    color:  #ffc107;
+    }
+
+    .reasons-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .reasons-list li {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      text-align: center;
+    }
+    
+    .cta .btn-primary {
+      background: #0d6efd;
+      padding: 14px 36px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="left"><i class="bi bi-globe"></i> Welcome to Wennze Cloud Service!</div>
+    <div class="right">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/" target="blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/" target="blank"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="{% static 'images/wennze1.jpeg' %}" alt="Wennze Cloud" style="width:120px;">
+    </div>
+    <ul class="nav-links">
+      <li class="dropdown">
+        <a href="{% url 'managed'  %}">Managed IT Services <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="{% url 'co_managed' %}">Co-managed IT Services</a></li>
+          <li><a href="{% url 'assets_management' %}">IT Asset management and disposal</a></li>
+          <li><a href="{% url 'support' %}">IT support</a></li>
+          <li><a href="{% url 'network_admin' %}">Network Administration</a></li>
+          <li><a href="{% url 'server_management' %}">Server Management</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="{% url 'cyber' %}">Cybersecurity <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="{% url 'cyber_risk' %}">Cyber risk assessment</a></li>
+          <li><a href="{% url 'dark_web' %}">Dark web monitoring</a></li> 
+          <li><a href="{% url 'endpoint_solutions' %}">Endpoint detection and response</a></li> 
+          <li><a href="{% url 'incident_response' %}">Incident response</a></li> 
+          <li><a href="{% url 'pen_testing' %}">PenTesting</a></li> 
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="{% url 'consulting' %}">IT Consulting <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="{% url 'business_intelligence' %}">Business intelligence</a></li>
+          <li><a href="{% url 'dev_ops' %}">DevOps</a></li>
+          <li><a href="{% url 'it_outsourcing' %}">Onshore IT outsourcing</a></li>
+          <li><a href="{% url 'grc' %}">Governance, risk and compliance</a></li>
+          <li><a href="{% url 'share_point' %}">Sharepoint</a></li>
+          <li><a href="{% url 'staff_augmentation' %}">Staff augmentation</a></li>
+          <li><a href="{% url 'virtual_cisco' %}">Virtual CISCO</a></li>
+          <li><a href="{% url 'vcio' %}">Virtual chief information officer</a></li>
+          <li><a href="{% url 'web_development' %}">Web development</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="{% url 'cloud' %}">Cloud <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="{% url 'azure' %}">Azure</a></li>
+          <li><a href="{% url 'cloud_storage' %}">Cloud storage</a></li>
+          <li><a href="{% url 'google' %}">Google cloud</a></li>
+          <li><a href="{% url 'iaas' %}">Infrastructure as a service</a></li>
+          <li><a href="{% url 'private_cloud' %}">Private cloud</a></li>
+          <li><a href="{% url 'virtual_desktop' %}">Virtual desktop infrastructure</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'about' %}">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" style="background-image: url('{% static 'images/image2.jpg' %}');">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Revolutionize Your Business</h1>
+      <h2>With Our Premier IT Expertise</h2>
+      <ul class="features">
+        <li><i class="fas fa-check-circle text-success"></i> Industry-Leading Expertise</li>
+        <li><i class="fas fa-check-circle text-success"></i> Top-Tier Cybersecurity Solutions</li>
+        <li><i class="fas fa-check-circle text-success"></i> 24/7 Support & Monitoring</li>
+      </ul>
+      <a href="{% url 'contact' %}" class="btn-primary contact-btn">Contact Us</a>
+      <p class="trusted">Trusted by Global Leaders</p>
+      <div class="stars">★★★★★</div>
+    </div>
+  </header>
+
+  <section class="services-overview">
+    <h2 class="text-center">🌐 Our Core Services</h2>
+   <div class="services-grid">
+  <div class="service-card">
+      <h4><i class="fas fa-tools"></i> Managed IT Services</h4>
+      <p>Proactive IT support, system monitoring, and maintenance to keep your business running smoothly.</p>
+      <a href="#" class="btn-service">Learn More</a>
+  </div>
+  <div class="service-card">
+      <h4><i class="fas fa-shield-alt"></i> Cybersecurity</h4>
+      <p>Robust cybersecurity strategies to protect your business from evolving threats and risks.
+        Stay safe and secure with confidence.</p>
+      <a href="#" class="btn-service">Learn More</a>
+  </div>
+  <div class="service-card">
+      <h4><i class="fas fa-laptop-code"></i> IT Consulting</h4>
+      <p>Expert advice and customized strategies to help your business thrive through technology.
+        Drive innovation across your organization.</p>
+      <a href="#" class="btn-service">Learn More</a>
+  </div>
+  <div class="service-card">
+      <h4><i class="fas fa-cloud"></i> Cloud Solutions</h4>
+      <p>Cloud migration, hosting, and management solutions to boost flexibility and productivity.
+        Empower digital growth.</p>
+      <a href="#" class="btn-service">Learn More</a>
+  </div>
+</div>
+
+  </section>
+
+    <section class="why-choose-us">
+    <h2 class="text-center">Why Choose Wennze Cloud Service?</h2>
+    <ul class="reasons-list text-center">
+        <li>✔ Dedicated to Understanding Your Unique Needs</li>
+        <li>✔ Tailored IT Solutions That Grow With Your Business</li>
+        <li>✔ Trusted Long-Term Partnerships, Backed by Decades of Expertise</li>
+        <li>✔ Seamless Collaboration with Industry-Leading Technologies</li>
+    </ul>
+    </section>
+
+  <section class="cta">
+    <h2>Ready to Transform Your IT?</h2>
+    <a href="{% url 'contact' %}" class="btn-primary">Get in Touch Today</a>
+  </section>
+
+  <footer class="bg-light py-4 mt-5 border-top">
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <img src="{% static 'images/wennze1.jpeg' %}" alt="Wennze Cloud" style="width: 140px; margin-bottom: 10px;">
+        <p class="mb-0 text-dark">&copy; {% now "Y" %} Wennze Cloud Service. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="mb-2">
+          <a href="#" class="text-dark mx-2"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-dark mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+          <a href="#" class="text-dark mx-2"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-dark mx-2"><i class="bi bi-twitter-x fs-4"></i></a>
+        </div>
+        <div>
+          <a href="#" class="text-dark small mx-2">Privacy Policy</a> | 
+          <a href="#" class="text-dark small mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </footer>
+
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

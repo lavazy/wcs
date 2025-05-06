@@ -1,0 +1,191 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Professional IT Support Services | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg15.jpeg' %}');">
+        <div class="container">
+            <h1>Professional IT Support Services</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+     <section class="intro">
+        <div class="container">
+            <h2>Reliable IT Support When You Need It</h2>
+            <p>Our comprehensive IT support services provide businesses with the technical expertise and responsive assistance needed to keep your operations running smoothly. Whether you need occasional help or full managed services, we have solutions to match your requirements.</p>
+            <p>From troubleshooting day-to-day issues to strategic technology planning, our certified technicians deliver the support your business deserves.</p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our IT Support Services</h2>
+                <p>Complete technology support solutions tailored to your business needs.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Help Desk Support</h3>
+                    <p>24/7 technical assistance for your employees with fast response times and high satisfaction ratings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Support</h3>
+                    <p>Proactive monitoring and maintenance of your network infrastructure to prevent downtime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Security Support</h3>
+                    <p>Protect your business with security monitoring, patch management, and threat prevention.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Support</h3>
+                    <p>Expert assistance with cloud platforms including Office 365, Azure, AWS, and Google Workspace.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Device Support</h3>
+                    <p>Comprehensive support for smartphones, tablets, and other mobile endpoints in your environment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Backup & Recovery</h3>
+                    <p>Ensure business continuity with reliable backup solutions and disaster recovery planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Benefits of Our IT Support</h2>
+                <p>Partner with us for technology support that drives business success.</p>
+            </div>
+            <div class="benefits-content">
+                <div class="benefits-image">
+                    <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/it-support-team.jpg" alt="IT Support Team">
+                </div>
+                <div class="benefits-list">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Rapid Response</h3>
+                            <p>Get quick resolutions to technical issues with our guaranteed response times.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Increased Productivity</h3>
+                            <p>Minimize downtime and keep your team focused on their work, not tech problems.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Expert Knowledge</h3>
+                            <p>Access to certified professionals across all major platforms and technologies.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Flexible Options</h3>
+                            <p>Choose from pay-as-you-go, block hours, or unlimited support plans.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h3>Proactive Protection</h3>
+                            <p>Prevent problems before they occur with our monitoring and maintenance services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our IT Support Process</h2>
+                <p>A streamlined approach to resolving your technology issues efficiently.</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Request Submission</h3>
+                    <p>Contact us via phone, email, or our client portal to log your support request.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Ticket Prioritization</h3>
+                    <p>Our team assesses and prioritizes your issue based on impact and urgency.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Expert Assignment</h3>
+                    <p>The most qualified technician is assigned to resolve your specific issue.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Problem Resolution</h3>
+                    <p>Your technician works diligently to resolve the issue with minimal disruption.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Follow-up & Feedback</h3>
+                    <p>We ensure complete satisfaction and look for ways to prevent future issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <h2>Ready for Stress-Free IT Support?</h2>
+            <p>Discover how our professional IT support services can keep your business running smoothly while reducing technology headaches.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn">Get Support Now</a>
+                <a href="tel:+18001234567" class="btn btn-outline">Emergency Support Hotline</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

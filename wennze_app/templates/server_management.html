@@ -1,0 +1,191 @@
+{% extends "base_solutions.html" %}
+{% load static %}
+{% block title %}
+    Professional Server Management Services | BetterWorld Technology
+{% endblock title %}
+
+{% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg7.jpeg' %}');">
+        <div class="container">
+            <h1>Server Management Services</h1>
+            <p>Augment your internal IT team with our expertise and resources to enhance your technology operations and security.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Get Started</a>
+        </div>
+    </section>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="container">
+        <h2>Expert Server Management Solutions</h2>
+        <p>Our comprehensive server management services ensure your critical infrastructure operates at peak performance with maximum security and reliability. Let our certified engineers handle your servers while you focus on your business.</p>
+        <p>From routine maintenance to complex troubleshooting, we provide end-to-end server management for physical, virtual, and cloud environments.</p>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Server Management Services</h2>
+            <p>Complete server solutions tailored to your infrastructure needs</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>24/7 Server Monitoring</h3>
+                <p>Continuous monitoring of server health, performance, and availability with instant alerting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Hardening</h3>
+                <p>Regular security patches, vulnerability scanning, and compliance hardening for all server types.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Patch Management</h3>
+                <p>Automated and manual patch deployment with comprehensive testing and rollback plans.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Backup Management</h3>
+                <p>Customized backup solutions with regular testing and disaster recovery planning.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>Cloud Server Management</h3>
+                <p>Expert management of AWS EC2, Azure VMs, Google Cloud instances, and other cloud platforms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <h3>Performance Optimization</h3>
+                <p>Continuous tuning of server configurations for maximum efficiency and resource utilization.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Benefits of Professional Server Management</h2>
+            <p>Why leading businesses trust us with their critical servers</p>
+        </div>
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/server-management.jpg" alt="Server Rack Management">
+            </div>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-uptime"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>99.99% Uptime</h3>
+                        <p>Proactive maintenance and rapid response ensures maximum server availability.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Enterprise Security</h3>
+                        <p>Protection against vulnerabilities, breaches, and unauthorized access.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Peak Performance</h3>
+                        <p>Optimized configurations for faster response times and efficient resource usage.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Cost Efficiency</h3>
+                        <p>Reduce hardware costs through proper resource allocation and virtualization.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="benefit-text">
+                        <h3>Expert Support</h3>
+                        <p>24/7 access to server specialists with deep platform expertise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Server Management Process</h2>
+            <p>A proven methodology for reliable server operations</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Server Assessment</h3>
+                <p>Comprehensive evaluation of your current server environment and workloads.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Baseline Configuration</h3>
+                <p>Establishing optimal configurations and security standards for your servers.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Monitoring Deployment</h3>
+                <p>Implementation of monitoring tools and alerting systems.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Ongoing Maintenance</h3>
+                <p>Regular patching, updates, and performance tuning.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <h3>Continuous Improvement</h3>
+                <p>Regular reviews and optimizations based on usage patterns and new technologies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta" id="contact">
+    <div class="container">
+        <h2>Ready to Optimize Your Server Infrastructure?</h2>
+        <p>Let our server experts handle your critical systems while you focus on growing your business.</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn">Request Server Assessment</a>
+            <a href="tel:+18001234567" class="btn btn-outline">Emergency Server Support</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}
