@@ -1,7 +1,7 @@
 {% extends "base_solutions.html" %}
 {% load static %}
 {% block title %}
-    Co-Managed IT Services | BetterWorld Technology
+    Co-Managed IT Services | Wennze Cloud Service
 {% endblock title %}
 
 {% block content %}
@@ -86,7 +86,7 @@
             </div>
             <div class="benefits-content">
                 <div class="benefits-image">
-                    <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/co-managed-it-benefits.jpg" alt="Team collaboration">
+                    <img src="{% static 'images/bg39.jpeg' %}" alt="Team collaboration">
                 </div>
                 <div class="benefits-list">
                     <div class="benefit-item">
@@ -177,8 +177,7 @@
             <h2>Ready to Enhance Your IT Team?</h2>
             <p>Discover how our co-managed IT services can help your organization achieve more with your existing resources.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn">Request a Consultation</a>
-                <a href="tel:+18001234567" class="btn btn-outline">Call Us Now</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline">Call Us Now</a>
             </div>
         </div>
     </section>

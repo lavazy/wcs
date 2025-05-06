@@ -87,7 +87,7 @@
             </div>
             <div class="benefits-content">
                 <div class="benefits-image">
-                    <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/it-asset-management.jpg" alt="IT Asset Management">
+                    <img src="{% static 'images/bg12.jpeg' %}" alt="IT Asset Management">
                 </div>
                 <div class="benefits-list">
                     <div class="benefit-item">
@@ -183,8 +183,7 @@
             <h2>Ready to Optimize Your IT Asset Management?</h2>
             <p>Discover how our comprehensive asset management and secure disposal services can protect your data and maximize the value of your technology investments.</p>
             <div class="cta-buttons">
-                <a href="#" class="btn">Request a Free Audit</a>
-                <a href="tel:+18001234567" class="btn btn-outline">Call Our Asset Team</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline">Call Our Asset Team</a>
             </div>
         </div>
     </section>
