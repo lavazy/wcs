@@ -75,7 +75,7 @@
         </div>
         <div class="benefits-content">
             <div class="benefits-image">
-                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/sharepoint-services.jpg" alt="SharePoint Visualization">
+                <img src="{% static 'images/bg37.jpeg' %}" alt="SharePoint Visualization">
             </div>
             <div class="benefits-list">
                 <div class="benefit-item">
@@ -161,8 +161,7 @@
         <h2>Ready to Empower Your Team with SharePoint?</h2>
         <p>Let us help you design and deploy the right SharePoint solution for your business needs.</p>
         <div class="cta-buttons">
-            <a href="#" class="btn">Get Started with SharePoint</a>
-            <a href="tel:+18001234567" class="btn btn-outline">Speak to a SharePoint Specialist</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline">Speak to a SharePoint Specialist</a>
         </div>
     </div>
 </section>

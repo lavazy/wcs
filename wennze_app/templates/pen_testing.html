@@ -87,7 +87,7 @@
         </div>
         <div class="benefits-content">
             <div class="benefits-image">
-                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/penetration-testing.jpg" alt="Penetration Testing Process">
+                <img src="{% static 'images/bg35.jpeg' %}" alt="Penetration Testing Process">
             </div>
             <div class="benefits-list">
                 <div class="benefit-item">
@@ -183,48 +183,9 @@
         <h2>Ready to Test Your Security Defenses?</h2>
         <p>Discover your vulnerabilities before attackers do - schedule a penetration test today.</p>
         <div class="cta-buttons">
-            <a href="#" class="btn">Request a Pen Test</a>
-            <a href="tel:+18001234567" class="btn btn-outline">Speak to a Security Consultant</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline">Speak to a Security Consultant</a>
         </div>
     </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="faq">
-    <div class="container">
-        <div class="section-title">
-            <h2>Penetration Testing FAQs</h2>
-            <p>Answers to common questions about our services</p>
-        </div>
-        <div class="faq-items">
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>How often should we conduct penetration testing?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>We recommend annual penetration testing at minimum, with more frequent testing (quarterly or biannually) for organizations handling sensitive data or undergoing significant system changes. Compliance requirements like PCI DSS mandate testing at least annually and after major changes.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>What's the difference between vulnerability scanning and pen testing?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>Vulnerability scanning uses automated tools to identify known vulnerabilities, while penetration testing involves manual exploitation attempts by security experts to validate risks and demonstrate potential business impact. Pen testing provides deeper insight into how vulnerabilities could be chained together to compromise systems.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-question">
-                    <span>Will testing disrupt our operations?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="faq-answer">
-                    <p>We follow strict rules of engagement to minimize disruption. Most tests are conducted non-disruptively, with any potentially invasive testing scheduled during maintenance windows. Our team coordinates closely with your IT staff throughout the engagement.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 {% endblock content %}

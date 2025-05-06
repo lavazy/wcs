@@ -1,1 +1,232 @@
-About us...
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wennze Cloud Services</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{% static "images/wennze1.jpeg" %}');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .features-grid, .benefits-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card, .benefit-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .feature-icon, .benefit-icon {
+            font-size: 32px;
+            color: #2196f3;
+            margin-bottom: 15px;
+        }
+
+        .alt-bg {
+            background-color: #eef2f5;
+        }
+
+        .cta {
+            background-color:  #ffc107;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .cta .btn-outline:hover {
+            background-color: #fff;
+            color: #2196f3;
+        }
+
+        .container {
+            padding: 60px 15px;
+        }
+
+        h2, h3 {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4">About Wennze Cloud Services</h1>
+        <p class="lead">Empowering Africa’s digital future with innovative, secure, and accessible technology solutions.</p>
+    </div>
+</section>
+
+<!-- About Us -->
+<section>
+    <div class="container">
+        <h2 class="text-center mb-4">Who We Are</h2>
+        <p><strong>Wennze Cloud Services (WCS)</strong> is a proudly African ICT and Managed Services Provider (MSP) founded in 2020. Born out of a desire to bring reliable, cutting-edge technology to the African continent, WCS exists to bridge the digital divide and fuel economic growth through innovation.</p>
+        <p>From our humble beginnings, we've grown into a dynamic, forward-thinking company focused on delivering tailored technology solutions for individuals, small businesses, enterprises, and public sector organizations. Our work is guided by a core belief: <strong>Africa deserves world-class digital infrastructure and solutions that are both accessible and sustainable.</strong></p>
+    </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="alt-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Purpose</h2>
+            <p>Driven by innovation, rooted in Africa.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>To deliver powerful, secure, and innovative ICT solutions that empower African businesses and communities to thrive in a digital world.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To become a leading force in Africa’s digital transformation by providing next-generation cloud services, infrastructure, and managed IT solutions — making Africa not just connected, but competitive on a global scale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services -->
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>End-to-end technology solutions designed for Africa’s future.</p>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud Services</h3>
+                <p>Scalable cloud infrastructure, storage, hosting, and SaaS solutions for all business sizes.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-tools"></i></div>
+                <h3>Managed IT Services</h3>
+                <p>Proactive monitoring, remote support, system maintenance, and helpdesk services.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Network & Connectivity</h3>
+                <p>Fiber, LTE, wireless, and hybrid solutions tailored for speed, security, and reliability.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Cybersecurity</h3>
+                <p>Robust protection for data, networks, and endpoints, including firewalls, backups, and threat response.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-user-cog"></i></div>
+                <h3>Consulting & Integration</h3>
+                <p>Strategic guidance and custom implementations to align technology with your goals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="alt-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2>Why Choose WCS?</h2>
+            <p>Your technology partner with a mission for impact.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-globe-africa"></i></div>
+                <h3>Local Expertise, Global Standards</h3>
+                <p>We understand Africa’s unique challenges and provide solutions that meet international standards.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Client-Focused</h3>
+                <p>We listen, adapt, and build long-term relationships based on trust.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Innovation-Driven</h3>
+                <p>Our team stays ahead of the curve to offer future-ready technology.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                <h3>Reliable Support</h3>
+                <p>We provide 24/7 support and proactive service monitoring to keep you online and productive.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Commitment to Africa -->
+<section>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Commitment to Africa</h2>
+            <p>Technology for progress. Technology for people.</p>
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-wifi"></i></div>
+                <h3>Closing the Digital Gap</h3>
+                <p>We aim to connect rural and urban communities with equal access to opportunity.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-briefcase"></i></div>
+                <h3>Supporting SMEs & Startups</h3>
+                <p>Affordable, scalable solutions help small businesses grow and compete.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-user-graduate"></i></div>
+                <h3>Empowering Young Talent</h3>
+                <p>We invest in future professionals through internships, mentorships, and skills development.</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Sustainable Digital Growth</h3>
+                <p>We're committed to inclusive, environmentally-conscious tech progress across Africa.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="container">
+        <h2>Let’s Build the Future Together</h2>
+        <p>Whether you're looking to transform your business or start small, Wennze Cloud Services is your trusted technology partner for Africa’s digital future.</p>
+        <a href="{% url 'contact' %}" class="btn btn-outline">Get in Touch</a>
+    </div>
+</section>
+
+</body>
+</html>

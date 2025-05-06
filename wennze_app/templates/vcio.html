@@ -1,13 +1,20 @@
 {% extends "base_solutions.html" %}
+{% load static %}
 {% block title %}
-    Virtual Chief Information Officer (vCIO) | BetterWorld Technology
+    Virtual Chief Information Officer (vCIO) | Wennze Cloud Service
 {% endblock title %}
 
-{% block heading %}
-    <h1>Virtual Chief Information Officer (vCIO)</h1>
-{% endblock heading %}
-
 {% block content %}
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg43.jpeg' %}');">
+        <div class="container">
+            <h1>Virtual Chief Information Officer (vCIO)</h1>
+            <p>Strategic IT leadership, planning, and oversight—delivered virtually through experienced CIO professionals.</p>
+            <a href="{% url 'contact' %}" class="btn btn-warning">Explore Virtual Cisco</a>
+        </div>
+    </section>
+
 <!-- Intro Section -->
 <section class="intro">
     <div class="container">
@@ -63,7 +70,7 @@
         </div>
         <div class="benefits-content">
             <div class="benefits-image">
-                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/virtual-cio.jpg" alt="vCIO Benefits">
+                <img src="{% static 'images/bg42.jpeg' %}" alt="vCIO Benefits">
             </div>
             <div class="benefits-list">
                 <div class="benefit-item">
@@ -129,7 +136,7 @@
             </div>
         </div>
     </div>
-</section>
+</section><br><br>
 
 <!-- CTA Section -->
 <section class="cta" id="contact">
@@ -137,8 +144,7 @@
         <h2>Need a Strategic IT Leader?</h2>
         <p>Partner with BetterWorld Technology for a dedicated Virtual CIO that understands your mission and drives your vision forward.</p>
         <div class="cta-buttons">
-            <a href="#" class="btn">Book a vCIO Consultation</a>
-            <a href="tel:+18001234567" class="btn btn-outline">Speak with an Expert</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline">Speak with an Expert</a>
         </div>
     </div>
 </section>

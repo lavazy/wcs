@@ -1,19 +1,24 @@
 {% extends "base_solutions.html" %}
+{% load static %}
 {% block title %}
-    Web Development Services | BetterWorld Technology
+    Web Development Services | Wennze Cloud Service
 {% endblock title %}
 
-{% block heading %}
-    <h1>Web Development Services</h1>
-{% endblock heading %}
-
 {% block content %}
+<!-- Hero Section -->
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{% static 'images/bg13.jpeg' %}');">
+    <div class="container">
+        <h1>Web Development Services</h1>
+        <p>Build modern, responsive, and secure websites and web applications that drive business results.</p>
+        <a href="{% url 'contact' %}" class="btn btn-warning">Start Your Project</a>
+    </div>
+</section>
+
 <!-- Intro Section -->
 <section class="intro">
     <div class="container">
-        <h2>Custom Websites That Empower Your Business</h2>
-        <p>At BetterWorld Technology, we design and develop websites that go beyond aesthetics—our sites are built to perform, engage, and convert. Whether you're a startup or an established enterprise, our web development solutions are tailored to meet your goals and create a strong digital presence.</p>
-        <p>From concept to launch, we help you stand out in a competitive online landscape.</p>
+        <h2>Custom Web Development Tailored to Your Business</h2>
+        <p>From startups to enterprises, Wennze Cloud Service delivers scalable, user-friendly, and performance-driven websites and platforms that align with your goals and vision.</p>
     </div>
 </section>
 
@@ -21,34 +26,39 @@
 <section class="features">
     <div class="container">
         <div class="section-title">
-            <h2>Our Web Development Capabilities</h2>
-            <p>Modern, scalable, and secure digital experiences</p>
+            <h2>What We Offer</h2>
+            <p>Comprehensive web development services designed to bring your ideas to life.</p>
         </div>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
-                <h3>Custom Website Design</h3>
-                <p>We create responsive, user-focused designs that reflect your brand and engage your audience.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
-                <h3>E-commerce Development</h3>
-                <p>Build secure, scalable online stores with seamless payment integrations and product management tools.</p>
-            </div>
-            <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-code"></i></div>
-                <h3>Web App Development</h3>
-                <p>Develop powerful web applications tailored to your specific workflows and business logic.</p>
+                <h3>Custom Website Development</h3>
+                <p>We build tailored websites from the ground up—designed to reflect your brand and meet your needs.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
-                <h3>Mobile Optimization</h3>
-                <p>Ensure your site looks and performs great across all devices and screen sizes.</p>
+                <h3>Responsive Design</h3>
+                <p>Ensure seamless experiences across all devices with mobile-first, responsive design.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon"><i class="fas fa-tools"></i></div>
-                <h3>Ongoing Maintenance</h3>
-                <p>We handle updates, backups, and optimizations to keep your website fast and secure.</p>
+                <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                <h3>Secure Architecture</h3>
+                <p>Security is baked in—protecting your site and users with best-in-class practices.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Performance Optimization</h3>
+                <p>Fast load times and smooth functionality ensure your visitors stay engaged.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shopping-cart"></i></div>
+                <h3>E-Commerce Solutions</h3>
+                <p>Sell more online with scalable and secure e-commerce platforms powered by modern tools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>SEO & Analytics</h3>
+                <p>Improve your visibility online and track engagement with integrated SEO and analytics tools.</p>
             </div>
         </div>
     </div>
@@ -58,74 +68,42 @@
 <section class="benefits">
     <div class="container">
         <div class="section-title">
-            <h2>Why Choose BetterWorld for Web Development?</h2>
-            <p>Partner with experts who understand the web and your business</p>
+            <h2>Why Choose Wennze for Web Development</h2>
+            <p>Expert-led development backed by business insight and creativity.</p>
         </div>
         <div class="benefits-content">
             <div class="benefits-image">
-                <img src="https://www.betterworldtechnology.com/wp-content/uploads/2021/03/web-development.jpg" alt="Web Development Benefits">
+                <img src="{% static 'images/bg35.jpeg' %}" alt="Web Development Benefits">
             </div>
             <div class="benefits-list">
                 <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="benefit-icon"><i class="fas fa-lightbulb"></i></div>
                     <div class="benefit-text">
-                        <h3>Launch Faster</h3>
-                        <p>Accelerate your go-to-market with a dedicated development team and streamlined process.</p>
+                        <h3>Innovative Design</h3>
+                        <p>Stand out online with beautiful, custom visuals and user experiences.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-user-cog"></i></div>
+                    <div class="benefit-icon"><i class="fas fa-users"></i></div>
                     <div class="benefit-text">
-                        <h3>Tailored Functionality</h3>
-                        <p>From booking systems to CRMs, we build features that work for your specific needs.</p>
+                        <h3>User-Centered</h3>
+                        <p>We focus on usability to ensure your website works for real people.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-search-dollar"></i></div>
+                    <div class="benefit-icon"><i class="fas fa-handshake"></i></div>
                     <div class="benefit-text">
-                        <h3>SEO-Friendly</h3>
-                        <p>Our websites are built with clean code and best practices for search engine visibility.</p>
+                        <h3>Collaborative Approach</h3>
+                        <p>We work closely with you throughout the process—from ideation to launch.</p>
                     </div>
                 </div>
                 <div class="benefit-item">
-                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="benefit-icon"><i class="fas fa-cogs"></i></div>
                     <div class="benefit-text">
-                        <h3>Security-First Approach</h3>
-                        <p>We follow industry best practices to protect your data and users from online threats.</p>
+                        <h3>Ongoing Support</h3>
+                        <p>Our team is here post-launch to provide maintenance, updates, and guidance.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Process Section -->
-<section class="process">
-    <div class="container">
-        <div class="section-title">
-            <h2>Our Development Process</h2>
-            <p>Collaborative and transparent every step of the way</p>
-        </div>
-        <div class="steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <h3>Discovery</h3>
-                <p>We gather requirements and define goals to guide the project.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <h3>Design</h3>
-                <p>We create user-centric mockups and get your feedback before development.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <h3>Development</h3>
-                <p>We code and test your site using modern technologies and frameworks.</p>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <h3>Launch & Support</h3>
-                <p>We deploy the site, monitor performance, and provide ongoing maintenance.</p>
             </div>
         </div>
     </div>
@@ -134,11 +112,10 @@
 <!-- CTA Section -->
 <section class="cta" id="contact">
     <div class="container">
-        <h2>Ready to Build Your Website?</h2>
-        <p>Contact BetterWorld Technology to start creating a powerful, engaging, and results-driven website today.</p>
+        <h2>Ready to Build Something Amazing?</h2>
+        <p>Let's turn your vision into a high-performing digital experience with Wennze Web Development Services.</p>
         <div class="cta-buttons">
-            <a href="#" class="btn">Start a Project</a>
-            <a href="tel:+18001234567" class="btn btn-outline">Call Our Experts</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline">Let's Talk</a>
         </div>
     </div>
 </section>

@@ -1,0 +1,4 @@
+1. Database
+2. Database view logic
+3. from start (service pages in dropdwn menu style) and social med links
+4. Footer on service pages
