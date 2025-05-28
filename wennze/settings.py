@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-32re_)iz2!@um!@cqh81ej(=si3px@0*=$q(+ojh)#d+=4t8o1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wcs.wennze.co.za','www.wcs.wennze.co.za', '66.228.56.28', 'localhost', '127.0.0.1']
 
 
 # Application definition
